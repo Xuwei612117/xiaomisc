@@ -1,4 +1,5 @@
- body{
+
+body{
   min-width:  1100px;
   color:  #2c3a46;
   background: #ffffff;
@@ -30,7 +31,7 @@
   zoom: 1;
 
 }
-a,li,div,i,h3,p,small{
+a,li,div,i,h3,p,small,img,i{
   margin: 0;
   padding: 0;
   border: 0;
@@ -122,9 +123,30 @@ li.reg{
   border-radius: 2px;
   cursor: pointer;
 }
-.tu{
+
+.header .header-conta .tu{
   position: relative;
   display: inline-block;
+}
+
+.header .header-conta .tu:before {
+  border-top-color: #ffffff;
+  top: -9px;
+  z-index: 2;
+}
+.header .header-conta .tu:after,.header .header-conta .tu:before {
+  content: ' ' ;
+  height: 0;
+  width: 0;
+
+  position: absolute;
+  left: 5px;
+  border: 5px solid transparent;
+}
+.header .header-conta .tu:after{
+  border-top-color: #333;
+  top: -7px;
+  z-index: 1;
 }
 
 
@@ -165,7 +187,7 @@ right:0;
 bottom: 0;
 margin: auto;
 }
- img{
+.swiper-cont .swip-bg img{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -174,12 +196,12 @@ margin: auto;
   background-position-y:center;
 }
 
-h3{
+.swiper-cont .slid2 .content-wrap h3{
   font-size: 44px;
   margin: 100px 0px 7px;
   line-height: 62px;
 }
- p{
+ .swiper-cont .slid2 p{
   font-size: 20px;
   color: #777777;
   margin-bottom: 55px;
@@ -266,20 +288,78 @@ small{
 
 .mains .wr{
   max-width: 1100px;
-  margin: 0 auto;
+  margin:0 auto;
   position: relative;
-  zoom: 1;
+  zoom:1;
 }
-.mains .wra h3{
+
+.mains .wcar-c h3{
   font-family: PingFangSC-Medium;
   font-size: 28px;
-  color: #333;
-  letter-spacing: 0;
+  color: #333333;
+  letter-spacing:0;
 }
-.mains .wr h3{
+.mains .wr h3 {
   text-align: center;
   font-size: 28px;
-  color: #333;
+  color: #333333;
   line-height: 40px;
-  padding-top: 90px;
+  padding-top:90px;
+}
+
+.mains .wcar-c .wcar-cont{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 70px;
+}
+.mains .wcar-c .wcar-cont .wcar-left{
+  -webkit-box-flex: 1;
+  flex: 1;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+.mains .wcar-c .wcar-cont .wcar-left .wcar-sec{
+  margin-bottom: 28px;
+}
+.mains .wcar-c .wcar-cont .wcar-left .wcar-sec .wcar-title{
+  color: #333;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: PingFangSC-Medium;
+  letter-spacing: 0;
+}
+.mains .wcar-c .wcar-cont .wcar-left .wcar-sec .wcar-summary{
+  margin-top: 5px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #999;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.mains a.blue{
+  background-color: #3388ff;
+  color: #ffffff;
+}
+.mains a.button{
+  font-size: 14px;
+  padding: 10px 42px;
+  border-radius: 2px;
+  display: inline-block;
+}
+a.button{
+  text-decoration: none;
+}
+.mains a.outline{
+  border: 1px solid #3388ff;
+  color: #3388ff;
+  padding: 9px 42px;
+}
+.mains .wcar-c .wcar-cont .wcar-right{
+  width:615px;
+}
+.mains .wcar-c .wcar-cont .wcar-right img{
+  width:100%;
 }
