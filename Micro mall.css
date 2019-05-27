@@ -31,7 +31,7 @@ body{
   zoom: 1;
 
 }
-a,li,div,i,h3,p,small,img{
+a,li,div,i,h3,p,small,img,ul{
   margin: 0;
   padding: 0;
   border: 0;
@@ -54,7 +54,7 @@ a,li,div,i,h3,p,small,img{
   margin-left: 10px;
   margin-bottom: -1px;
 }
-.linka{
+.alink{
   float: left;
   width: 78px;
   color: #999;
@@ -67,15 +67,12 @@ a,li,div,i,h3,p,small,img{
 .nav-list{
   float: right;
   zoom: 1;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
+}
+.header ul {
+  list-style: none;
 }
 
- .nav-list > li {
+.nav-list > li {
   float: left;
   display: inline-block;
   height: 70px;
@@ -85,15 +82,15 @@ a,li,div,i,h3,p,small,img{
 .page{
   color: #FF4444;
 }
-
-.nav-list .prod-drop{
+.pro{
   z-index: 200;
 }
-.nav-list .car-mar{
-  margin-right: 16px;
+
+.car{
+  margin-right: -12px;
 }
 
-li.log {
+li.denglu {
   padding: 0px 0px 0px 20px;
 }
 .login {
@@ -109,10 +106,10 @@ li.log {
   cursor: pointer;
 }
 
-li.reg{
+li.zuce{
   padding: 0px 0px 0px 10px;
 }
-.register{
+.registered{
   width: 80px;
   height: 30px;
   line-height: 30px;
@@ -124,14 +121,14 @@ li.reg{
   cursor: pointer;
 }
 
-.tu{
+.jiantou{
   position: relative;
   display: inline-block;
   top:2px;
   border:5px solid transparent;
   border-top-color:#333;
 }
-.tu1{
+.jiantoua{
   position: relative;
   display: inline-block;
   top:0px;
@@ -145,7 +142,7 @@ li.reg{
   height: 420px;
   width: 100%;
 }
-.swiper-cont {
+.swiper {
   width: 100%;
   height: 100%;
   margin-left: auto;
@@ -154,7 +151,7 @@ li.reg{
   overflow: hidden;
   z-index: 1;
 }
-.swiper-wrap{
+.swiper-a{
   position: relative;
   height: 100%;
   z-index: 1;
@@ -168,7 +165,7 @@ li.reg{
   position: relative;
 }
 
-.swiper-cont .slid2 .content-wrap{
+.content-a{
 position: absolute;
 width:1100px;
 height:100%;
@@ -178,7 +175,7 @@ right:0;
 bottom: 0;
 margin: auto;
 }
-.swiper-cont .swip-bg img{
+.swiper .swip-bg img{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -187,17 +184,23 @@ margin: auto;
   background-position-y:center;
 }
 
-.swiper-cont .slid2 .content-wrap h3{
+.content-a h3{
   font-size: 44px;
   margin: 100px 0px 7px;
   line-height: 62px;
 }
- .swiper-cont .slid2 p{
+ .swiper .slide1 p{
   font-size: 20px;
   color: #777777;
   margin-bottom: 55px;
 }
-a.prim{
+
+a.free{
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 2px;
+}
+a.trials{
   width: 160px;
   line-height:18px;
   display: inline-block;
@@ -207,18 +210,15 @@ a.prim{
   padding: 12px 42px;
   color: #ffffff;
 }
-a.button{
-  font-size: 14px;
-  text-decoration: none;
-  border-radius: 2px;
-}
+
 small{
   font-size: 14px;
   color: #777777;
   margin-top:15px;
   display:block;
 }
- .swiper-cont .swip-button {
+
+.content-b {
   width:1100px;
   height:100%;
   position: absolute;
@@ -228,8 +228,7 @@ small{
   left: 0;
   margin: auto;
 }
-
-.swiper-cont .custom-prev{
+.left-square{
   right:1130px;
   left:auto;
   width:60px;
@@ -237,8 +236,7 @@ small{
   background-size: 100% 100%;
   background-image: url(images/t.gif);
 }
-
-.swiper-cont .custom-next{
+.right-square{
   left:1130px;
   right:auto;
   width:60px;
@@ -246,7 +244,7 @@ small{
   background-size: 100% 100%;
   background-image:url(images/r.gif);
 }
-.next ,.prev{
+.right ,.left{
   position: absolute;
   top:50%;
   margin-top:-22px;
@@ -256,7 +254,7 @@ small{
   background-repeat: no-repeat;
 }
 
-.fix-kdzx{
+.abvisory{
   position: fixed;
     bottom: 56px;
     right: 30px;
@@ -268,7 +266,7 @@ small{
     opacity: 1;
     transition: all .5s ease;
 }
-.fix-kdzx p{
+.abvisory p{
   padding: 14px 16px;
     font-family: PingFangSC-Regular;
     font-size: 14px;
@@ -277,20 +275,20 @@ small{
     line-height: 16px;
 }
 
-.mains .wr{
+.mains .biaoti{
   max-width: 1100px;
   margin:0 auto;
   position: relative;
   zoom:1;
 }
 
-.mains .wcar-c h3{
+.mains .daxiao h3{
   font-family: PingFangSC-Medium;
   font-size: 28px;
   color: #333333;
   letter-spacing:0;
 }
-.mains .wr h3 {
+.mains .biaoti h3 {
   text-align: center;
   font-size: 28px;
   color: #333333;
@@ -298,13 +296,13 @@ small{
   padding-top:90px;
 }
 
-.mains .wcar-c .wcar-cont{
+.midfra{
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   margin-top: 70px;
 }
-.mains .wcar-c .wcar-cont .wcar-left{
+.wenzi-left{
   -webkit-box-flex: 1;
   flex: 1;
   display: flex;
@@ -312,17 +310,17 @@ small{
   -webkit-box-direction: normal;
   flex-direction: column;
 }
-.mains .wcar-c .wcar-cont .wcar-left .wcar-sec{
+ .smafra{
   margin-bottom: 28px;
 }
-.mains .wcar-c .wcar-cont .wcar-left .wcar-sec .wcar-title{
+.Intitle{
   color: #333;
   font-size: 18px;
   line-height: 24px;
   font-family: PingFangSC-Medium;
   letter-spacing: 0;
 }
-.mains .wcar-c .wcar-cont .wcar-left .wcar-sec .wcar-summary{
+.AshFonts{
   margin-top: 5px;
   font-family: PingFangSC-Regular;
   font-size: 14px;
@@ -330,27 +328,27 @@ small{
   letter-spacing: 0;
   line-height: 24px;
 }
-.mains a.blue{
+
+ a.freetrial{
   background-color: #3388ff;
   color: #ffffff;
 }
-.mains a.button{
+ a.kuai{
   font-size: 14px;
   padding: 10px 42px;
   border-radius: 2px;
   display: inline-block;
-}
-a.button{
   text-decoration: none;
 }
-.mains a.outline{
+ a.function{
   border: 1px solid #3388ff;
   color: #3388ff;
   padding: 9px 42px;
 }
-.mains .wcar-c .wcar-cont .wcar-right{
+
+ .tupian-right{
   width:615px;
 }
-.mains .wcar-c .wcar-cont .wcar-right img{
+ .tupian-right img{
   width:100%;
 }
