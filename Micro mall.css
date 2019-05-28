@@ -15,7 +15,7 @@ body{
   width: 100%;
   min-width: 1100px;
   height: auto;
-  position: relative;
+  position: relative; /*运用相对定位*/
   background: #ffffff;
   border-bottom: 1px solid #ededed;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
@@ -98,10 +98,10 @@ li.denglu {
   display: inline-block;
   border: 1px solid #2B90ED;
   color: #2B90ED;
-  text-align: center;
+  text-align: center; /*文本框里水平居中*/
   border-radius: 2px;
-  box-sizing: border-box;
-  cursor: pointer;
+  box-sizing: border-box; /*定义两个并排带边框的框*/
+  cursor: pointer;/*鼠标指针变成一只手的形状*/
 }
 
 li.zuce{
@@ -121,7 +121,7 @@ li.zuce{
 
 .jiantou{
   position: relative;
-  display: inline-block;
+  display: inline-block;/*行内块元素*/
   top:2px;
   border:5px solid transparent;
   border-top-color:#333;
@@ -131,7 +131,7 @@ li.zuce{
   display: inline-block;
   top:0px;
   right:14px;
-  border:5px solid transparent;
+  border:5px solid transparent/*设置为透明*/;
   border-top-color:#ffffff;
 }
 
@@ -164,7 +164,7 @@ li.zuce{
 }
 
 .content-a{
-position: absolute;
+position: absolute; /*运用绝对定位*/
 width:1100px;
 height:100%;
 top:0;
@@ -195,7 +195,8 @@ margin: auto;
 
 .freetrials{
   font-size: 14px;
-  text-decoration: none;
+  text-decoration: none;/*去掉a标签默认效果，使链接修饰显示无*/
+  color: #ffffff;
   border-radius: 2px;
   width: 160px;
   line-height:18px;
@@ -204,7 +205,6 @@ margin: auto;
   box-sizing: border-box;
   background: #3388ff;
   padding: 12px 42px;
-  color: #ffffff;
 }
 
 small{
@@ -246,7 +246,7 @@ small{
   z-index:10;
   cursor:pointer;
   background-position: 50%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;/*背景图重复样式为不重复，只显示一张*/
   left:1130px;
   right:auto;
   width:60px;
@@ -257,23 +257,23 @@ small{
 
 .abvisory{
   position: fixed;
-    bottom: 56px;
-    right: 30px;
-    height: 60px;
-    width: 60px;
-    border-radius: 100%;
-    background-image: linear-gradient(-180deg,#549bff,#38f);
-    z-index: 20;
-    opacity: 1;
-    transition: all .5s ease;
+  bottom: 56px;
+  right: 30px;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  background-image: linear-gradient(-180deg,#549bff,#38f);/*线性渐变效果*/
+  z-index: 20;
+  opacity: 1;/*透明度级别为默认值1*/
+  transition: all 0.5s ease;/*一定的时间区内平滑的过度*/
 }
 .abvisory p{
   padding: 14px 16px;
-    font-family: PingFangSC-Regular;
-    font-size: 14px;
-    color: #fff;
-    letter-spacing: 0;
-    line-height: 16px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 0;/*添加文字和文字间距*/
+  line-height: 16px;
 }
 
 .mains .biaoti{
@@ -298,8 +298,8 @@ small{
 }
 
 .midfra{
-  display: -webkit-box;
-  display: -webkit-flex;
+  display: -webkit-box;/*定义盒模型*/
+  display: -webkit-flex;/*容器*/
   display: flex;
   margin-top: 70px;
 }
@@ -307,8 +307,8 @@ small{
   -webkit-box-flex: 1;
   flex: 1;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;/*竖向排列*/
+  -webkit-box-direction: normal;/*容器内项目排列方向为默认横向排列*/
   flex-direction: column;
 }
  .smafra{
@@ -346,7 +346,7 @@ small{
   padding: 9px 42px;
   font-size: 14px;
   padding: 9px 42px;
-  border-radius: 2px;
+  border-radius: 2px; /*添加一个圆角边框*/
   display: inline-block;
   margin-right: 15px;
 }
